@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="bottomSheetContainer"
+    tools:context=".LoginActivity">
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:id="@+id/textView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginTop="32dp"
+              android:layout_marginEnd="16dp"
+              android:background="@drawable/skip_background"
+              android:onClick="skipButton"
+              android:paddingLeft="15dp"
+              android:paddingTop="8dp"
+              android:paddingRight="15dp"
+              android:paddingBottom="8dp"
+              android:text="Skip for now"
+              android:textColor="@color/black"
+              android:textSize="22dp"
+              android:textStyle="normal"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintTop_toTopOf="parent" />
+
+          <ImageView
+              android:id="@+id/imageView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentStart="true"
+              android:layout_alignParentEnd="true"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="60dp"
+              android:layout_marginEnd="32dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.496"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textView"
+              app:srcCompat="@drawable/uc_logo" />
+
+          <LinearLayout
+              android:id="@+id/linearLayout"
+              android:layout_width="match_parent"
+              android:layout_height="46dp"
+              android:layout_centerInParent="true"
+              android:layout_marginStart="32dp"
+              android:layout_marginTop="126dp"
+              android:layout_marginEnd="32dp"
+              android:background="@drawable/input_mobile_number_border"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingStart="10dp"
+              android:paddingEnd="5dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+              <FrameLayout
+                  android:id="@+id/selectCountry"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:onClick="selectCountry">
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center_horizontal"
+                      android:padding="4dp">
+
+                      <ImageView
+                          android:id="@+id/pickFlag"
+                          android:layout_width="30dp"
+                          android:layout_height="22dp"
+                          android:layout_gravity="center_vertical"
+                          android:layout_marginRight="5dp"
+                          android:src="@drawable/ind_flag" />
+
+                      <TextView
+                          android:id="@+id/pickCountryCode"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:paddingStart="5dp"
+                          android:text=""
+                          android:textColor="@color/black"
+                          android:textSize="18dp"
+                          android:textStyle="bold" />
+
+                      <ImageView
+                          android:layout_width="30dp"
+                          android:layout_height="30dp"
+                          android:scaleType="centerCrop"
+                          android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                  </LinearLayout>
+              </FrameLayout>
+
+              <View
+                  android:layout_width="1dp"
+                  android:layout_height="35dp"
+                  android:layout_gravity="center_vertical"
+                  android:background="@color/gray" />
+
+              <EditText
+                  android:id="@+id/etMobileNumber"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:background="@null"
+                  android:fontFamily="monospace"
+                  android:hint="Mobile Number"
+                  android:inputType="number"
+                  android:maxLength="10"
+                  android:paddingStart="20dp" />
+
+          </LinearLayout>
+
+          <Button
+              android:id="@+id/btnLoginSignUp"
+              android:layout_width="0dp"
+              android:layout_height="60dp"
+              android:layout_marginTop="32dp"
+              android:text="LogIn  / SignUp"
+              android:drawableEnd="@drawable/ic_baseline_arrow_right_alt_24"
+              android:textStyle="normal"
+              android:textAllCaps="false"
+              android:textSize="18sp"
+              android:textColor="@color/white"
+              android:drawablePadding="-95dp"
+              android:paddingEnd="95dp"
+              android:visibility="gone"
+              android:background="@drawable/black_button_bg"
+              app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+              app:layout_constraintStart_toStartOf="@+id/linearLayout"
+              app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+          <TextView
+              android:id="@+id/testLogin"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="8dp"
+              android:layout_marginEnd="16dp"
+              android:text="test-login"
+              android:textColor="#70B8F4"
+              app:layout_constraintEnd_toEndOf="@+id/textView"
+              app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/bottomsheet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

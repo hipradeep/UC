@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "856008960376",
+    "firebase_url": "https://urbanc-2c23c.firebaseio.com",
+    "project_id": "urbanc-2c23c",
+    "storage_bucket": "urbanc-2c23c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856008960376:android:34d5c895a6c49b70c9008d",
+        "android_client_info": {
+          "package_name": "com.example.uc297"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856008960376-pqnp59mqpgec7unrp6uspko2i54dgago.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uc297",
+            "certificate_hash": "c41e75078ec6eb1d351ecba955a4b6967fb6e955"
+          }
+        },
+        {
+          "client_id": "856008960376-cjppg2ma76dgfvml846602umvfsrunvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALS7sZdnRXtKnIEIgyKnXYeFG1KUFD7GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856008960376-cjppg2ma76dgfvml846602umvfsrunvp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

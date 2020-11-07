@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.RewardLoggedInFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:background="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:title="Refer &amp; Earn"
+                app:titleTextAppearance="@style/Toolbar.TitleText">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_share"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appBar">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="35dp"
+                        android:src="@drawable/uc_safe" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="30dp"
+                        android:weightSum="10">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Refer and get FREE Services"
+                                android:textColor="@color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="8dp"
+                                android:text="Invite your friends to Urban Company service. " />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_baseline_card_giftcard_24" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <View
+                            android:layout_width="170dp"
+                            android:layout_height="1.2dp"
+                            android:background="@color/colorPage" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Refer Via"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:layout_width="170dp"
+                            android:layout_height="1.2dp"
+                            android:background="@color/colorPage" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:baselineAligned="false"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp"
+                        android:weightSum="9">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:foreground="@drawable/ripple_effects"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_share_24"
+                                app:civ_border_width="1dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="WhatApp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:foreground="@drawable/ripple_effects"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_share_24"
+                                app:civ_border_width="1dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="Messenger" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:foreground="@drawable/ripple_effects"
+
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_baseline_more_horiz_24"
+                                app:civ_border_width="1dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                android:text="More" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical">
+
+                 <TextView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Refer everyone - the most generous referral program"
+                     android:textSize="20sp"
+                     android:textStyle="bold"
+                     android:textColor="@color/black"
+                     android:layout_marginLeft="25dp"
+                     android:layout_marginRight="25dp"
+                     android:layout_marginTop="30dp"
+                     android:layout_marginBottom="20dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:weightSum="10"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="2"
+                                android:src="@drawable/ic_baseline_star_24" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="@android:color/black"
+                                android:text="No mess left after haircut, Dispossable products"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:weightSum="10"
+                            android:layout_height="wrap_content">"
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_baseline_shopping_basket_24"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="@android:color/black"
+                                android:text="No mess left after haircut, Dispossable products"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:padding="10dp"
+                            android:layout_width="match_parent"
+                            android:weightSum="10"
+                            android:layout_height="wrap_content">"
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_weight="2"
+                                android:layout_height="50dp"
+                                android:src="@drawable/ic_baseline_how_to_reg_24"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="8"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:textColor="@android:color/black"
+                                android:text="No mess left after haircut, Dispossable products"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Term and Conditions"
+                                android:textColor="@color/colorBlue"
+                                android:drawableLeft="@drawable/ic_baseline_brightness_dot_24"
+                                android:drawablePadding="10dp"/>
+
+                            <TextView
+                                android:layout_marginLeft="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="FAQs"
+                                android:textColor="@color/colorBlue"
+                                android:drawableLeft="@drawable/ic_baseline_brightness_dot_24"
+                                android:drawablePadding="10dp"/>
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="8"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="You are yet to earn any scratch cards"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="8dp"
+                            android:text="Start refering to get surprises " />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/ese"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="?android:attr/listDivider" />
+                    <LinearLayout
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_baseline_card_giftcard_24"/>
+                        <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Earn Min. ₹100 off on every scratch card"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</FrameLayout>

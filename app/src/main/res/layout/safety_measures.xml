@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:src="@drawable/uc_safe"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:text="Best-in-class safety measures"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="8dp"
+
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                app:cardElevation="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/mask_thumb"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+               android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage of mask &amp; gloves"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                app:cardElevation="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/thermo_thumb"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature checks"
+                android:textSize="13dp"
+
+                android:gravity="center"
+                android:textColor="#000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                app:cardElevation="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/hand_wash"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sanitization of tools &amp; area"
+                android:textSize="13dp"
+
+                android:gravity="center"
+                android:textColor="#000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="0dp"
+                app:cardElevation="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="50dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/aarogya_setu"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aarogya Setu to ensure saftey"
+                android:textSize="13dp"
+                android:gravity="center"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

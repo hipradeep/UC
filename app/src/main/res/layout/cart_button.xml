@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/add_button_border"
+        android:clickable="true"
+        android:weightSum="9">
+
+        <LinearLayout
+            android:id="@+id/ll_addBtnDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="1dp"
+            android:gravity="center"
+            android:visibility="gone">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/decBtn"
+                android:background="@color/colorBlue"
+                android:drawableLeft="@drawable/ic_baseline_sub_24"
+                android:paddingLeft="5dp" />
+            <TextView
+                android:id="@+id/numCount"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/incBtn"
+                android:background="@color/colorBlue"
+                android:drawableLeft="@drawable/ic_baseline_add_white24"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_addBtnUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:background="@drawable/add_button_border"
+            android:visibility="visible"
+            android:focusable="true">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:text="ADD"
+                android:gravity="center"
+                android:textColor="@color/colorBlue"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <Button
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="2dp"
+                android:background="@color/colorPage"
+                android:clickable="false"
+                android:focusable="false"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
+                android:paddingLeft="5dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

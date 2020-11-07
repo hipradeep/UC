@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white">
+
+
+    <ImageView
+        android:id="@+id/service_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_shopping_basket_24" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/service_image"
+        app:layout_constraintTop_toTopOf="@+id/service_image">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facial &amp; Bleach"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_baseline_star_greeen24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="4.82"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" (56.4k rating)" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_navigate_next_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/service_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹499"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:text="₹885"
+                    android:textColor="@color/gray"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_info_24" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_watch_later_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="70 min"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="3"
+            android:gravity="end">
+
+            <LinearLayout
+                android:id="@+id/ll_btnAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/add_button_border"
+                android:clickable="true"
+                android:weightSum="9">
+
+                <LinearLayout
+                    android:id="@+id/ll_addBtnDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:padding="1dp"
+                    android:visibility="gone">
+
+                    <Button
+                        android:id="@+id/decBtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@color/colorBlue"
+                        android:drawableLeft="@drawable/ic_baseline_sub_24"
+                        android:paddingLeft="5dp" />
+
+                    <TextView
+                        android:id="@+id/numCount"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/colorBlue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/incBtn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@color/colorBlue"
+                        android:drawableLeft="@drawable/ic_baseline_add_white24"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_addBtnUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/add_button_border"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="ADD"
+                        android:textColor="@color/colorBlue"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="2dp"
+                        android:background="@color/colorPage"
+                        android:clickable="false"
+                        android:drawableLeft="@drawable/ic_baseline_add_24"
+                        android:focusable="false"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/doted_line"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="4dp"
+        android:layerType="software"
+        android:src="@drawable/dotted_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/service_image"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/service_image"
+        app:layout_constraintTop_toBottomOf="@+id/doted_line">
+
+        <TextView
+            android:id="@+id/service_detail1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_brightness_dot_24"
+            android:drawablePadding="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Des 1"
+             />
+
+        <TextView
+            android:id="@+id/service_detail2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_brightness_dot_24"
+            android:drawablePadding="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="Des 1" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/service_image"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:drawableRight="@drawable/ic_baseline_navigate_next_blue24"
+            android:gravity="center"
+            android:text="View Details"
+            android:textColor="@color/colorBlue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

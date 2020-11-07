@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.uc297">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".AgreeActivity" />
+        <activity android:name=".AddOnActivity" />
+        <activity android:name=".CategoryListActivity" />
+        <activity android:name=".ServiceActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity
+            android:name=".VerifyOTPActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SubServicesActivities.SubServicesOfHC"
+            android:parentActivityName=".AvailableServicesActivities.HairCutAtHome" />
+        <activity android:name=".CleaningPestControlListActivity" />
+        <activity android:name=".ExperienceSpotlightList" />
+        <activity android:name=".FeatureOffersActivityList" />
+        <activity
+            android:name=".ToolbarActivities.SearchProductsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AvailableServicesActivities.SalonAtHome"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ApplianceServicesRepairList" />
+        <activity
+            android:name=".SafetyActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ToolbarActivities.LocationActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".ToolbarActivities.GetAddressIntentService" />
+    </application>
+
+</manifest>

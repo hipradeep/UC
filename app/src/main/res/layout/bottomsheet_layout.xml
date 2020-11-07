@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:id="@+id/logInDetailsBottomSheet"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="14dp"
+            android:text="Select a country"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+             />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/pickUAE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setUAEFlagCode"
+            android:padding="18dp">
+
+            <ImageView
+                android:id="@+id/uaeFlag"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/uae_flag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="United Arab Emirats"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/uaeCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="+971" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setSingapurFlagCode"
+            android:padding="18dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/singapur_flag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Singapur"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="+65" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setAustraliaFlagCode"
+            android:padding="18dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="20dp"
+
+                android:src="@drawable/australia_flag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="Australia"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="+61" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="setIndiaFlagCode"
+            android:padding="18dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="20dp"
+
+                android:src="@drawable/ind_flag" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="India"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="+91" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
